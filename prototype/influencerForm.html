@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScanSafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg px-4 navbar-light bg-light">
+      <a class="navbar-brand d-flex flex-row align-items-center" href="scan.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16" style="transform: translateY(-3.5px)">
+              <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+          </svg>
+          <h3 style="margin-left: 12px;">ScanSafe</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="scan.html">Scan</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="your-ingredients.html">Your ingredients</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Account</h6>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="register.html">Register</a></li>
+              <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <h6 class="dropdown-header">Influencer</h6>
+              <li><a class="dropdown-item" href="influencerList.html">Suggest products</a></li>
+              <li><a class="dropdown-item" href="influencerForm.html">Add to watchlist</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <h6 class="dropdown-header">Admin</h6>
+              <li><a class="dropdown-item" href="adminDashboard.html">Admin Home</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+    <div class= "container pt-5">
+        
+        <h1 class="mb-4">New ingredient or additive proposal form</h1>
+        
+        <div class="bg-light-subtle p-4">
+        <form>
+            
+            <div class="mb-3">
+              <label for="ingredient" class="form-label">Ingredient</label>
+                <div class= "input-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Titanium dioxide, red 40, etc.">
+                    <span class="input-group-text" id="basic-addon2">check</span>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="risks" class="form-label">Risks to humans</label>
+              <input type="text" class="form-control" id="risks" placeholder="It may damage DNA">
+            </div>
+            
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Supporting website</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="supportingWebsite">https://</span>
+                        <input type="text" class="form-control" id="supportingWebsite" aria-describedby="basic-addon3 basic-addon4">
+                    </div>
+                <div class="form-text" id="basic-addon4">Any reputable site that provides documentation to support your proposal</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="supportingDocumentation" class="form-label">Supporting documentation:</label>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="supportingDocumentation">
+                    <label class="input-group-text" for="supportingDocumentation">Upload</label>
+                </div>
+                <div class="form-text" id="basic-addon4">Any documentation that supports your proposal</div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="comments" class="form-label">Comments</label>
+              <textarea class="form-control" id="comments" rows="5"></textarea>
+            </div>
+     
+            <div class="row mb-3">
+                <label for="ingredient" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <button type="reset" class="btn btn-light" style="float: right">Cancel</button>
+                    <button type="submit" class="btn btn-success" style="float: right">Submit</button>
+                </div>
+            </div>
+                
+        </form>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

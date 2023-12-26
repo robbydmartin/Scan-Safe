@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">   
+  <head>
+    <meta charset="utf-8">
+         
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScanSafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg px-4 navbar-light bg-light">
+      <a class="navbar-brand d-flex flex-row align-items-center" href="scan.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16" style="transform: translateY(-3.5px)">
+              <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+          </svg>
+          <h3 style="margin-left: 12px;">ScanSafe</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="scan.html">Scan</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="your-ingredients.html">Your ingredients</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header">Account</h6>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="register.html">Register</a></li>
+              <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <h6 class="dropdown-header">Influencer</h6>
+              <li><a class="dropdown-item" href="influencerList.html">Suggest products</a></li>
+              <li><a class="dropdown-item" href="influencerForm.html">Add to watchlist</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <h6 class="dropdown-header">Admin</h6>
+              <li><a class="dropdown-item" href="adminDashboard.html">Admin Home</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </nav>
+      
+       <div class= "container pt-5">
+        
+        <h1 class="mb-4">Hello, influencer!</h1>
+        <br>
+        <br>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th colspan= '3'><h5>Your suggested product list:</h5></th>
+                    <th style="text-align: right"><a href='influencerList.html'><button type="button" class="btn btn-primary">Create new</button></a></th>
+                </tr>
+            </thead>
+            <!--
+            <tbody>
+                <tr>
+                    <td>Doritos</td>
+                    <td>replace with</td>
+                    <td>Beanfields Nacho Cheese Chips</td>
+                    <td style="text-align: right"><a href='influencerList.html'><button type="button" class="btn btn-success">Edit</button></a></td>
+                </tr>
+                <tr>
+                    <td>Something</td>
+                    <td>replace with</td>
+                    <td>Something better</td>
+                    <td style="text-align: right"><a href='influencerList.html'><button type="button" class="btn btn-success">Edit</button></a></td>
+                </tr>
+                <tr>
+                    <td>Something</td>
+                    <td>replace with</td>
+                    <td>Something better</td>
+                    <td style="text-align: right"><a href='influencerList.html'><button type="button" class="btn btn-success">Edit</button></a></td>
+                </tr>-->
+                
+            <tbody>
+                <tr th:each="alternativeProduct : ${alternative_product}">                          
+                    <td th:text=" ${alternativeProduct.replaces_product}"></td>
+                    <td>replace with</td>
+                    <td th:text=" ${alternativeProduct.alternative_product}"></td>
+                    <td></td>
+                </tr>
+
+           
+            
+            </tbody>
+        </table>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+           
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th colspan='3'><h5>Your ingredient watchlist proposals:</h5></th>
+                    <th style="text-align: right"><a href='influencerForm.html'><button type="button" class="btn btn-primary">Create new</button></a></th>
+                </tr>
+                <tr>
+                    <th>Ingredient</th>
+                    <th></th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Red 40</td>
+                    <td></td>
+                    <td>Pending</td>
+                    <td style="text-align: right"><a href='influencerList.html'><button type="button" class="btn btn-success">Edit</button></a></td>           
+                </tr>
+                <tr>
+                    <td>Galitranium</td>
+                    <td></td>
+                    <td>Denied</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Veritozimoiozinide Batra Z</td>
+                    <td></td>
+                    <td>Accepted</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+           
+           
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
