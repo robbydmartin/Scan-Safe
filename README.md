@@ -15,7 +15,7 @@ allow them to make curated lists of products for other users to enjoy.
 
 ![UML diagram](https://github.com/ccYoungdahl/ScanSafe/blob/main/uml.jpg)
 
-# Grading
+# Execution
 
 We've included a .sql file to use with the project called STARTING_POINT.sql. 
 There's already a user of each type in the database to help with testing.
